@@ -20,9 +20,12 @@ dans une VM VMware, avec le bureau GNOME et une session X11.
 
 **2026-10-18**
 
+**2026-10-18**
+
 - Renommage du script d'installation `install.sh`.
-- Rédaction d'un fichier explicatif pour l'installation et l'utilisation du Lockscreen sur Kali Linux.
-- Le document présente les étapes à suivre pour installer les dépendances et lancer le programme sur Kali Linux.
+- Rédaction du fichier `INSTALL_KALI.md` pour expliquer comment installer et utiliser le Lockscreen sur Kali Linux.
+- Documentation des étapes d'installation des dépendances et des commandes nécessaires pour lancer le programme.
+- Ajout des explications pour vérifier le bon fonctionnement du Lockscreen après l'installation.
 **Reste à faire**
 
 1. Ajouter la locale `fr_FR.UTF-8` dans `install.sh`.
