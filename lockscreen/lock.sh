@@ -26,10 +26,10 @@ erreur() { echo "Erreur : $*" >&2; exit 1; }
 
 for cmd in python3 xsecurelock; do
     command -v "$cmd" >/dev/null 2>&1 \
-        || erreur "'$cmd' manquant. Lancer ./install.sh (ou : sudo apt install $cmd)."
+        || erreur "'$cmd' manquant. Lancer ./install_dependencies.sh (ou : sudo apt install $cmd)."
 done
 python3 -c "import Xlib" 2>/dev/null \
-    || erreur "module Python Xlib manquant. Lancer ./install.sh (ou : sudo apt install python3-xlib)."
+    || erreur "module Python Xlib manquant. Lancer ./install_dependencies.sh (ou : sudo apt install python3-xlib)."
 [ "${XDG_SESSION_TYPE:-}" != "wayland" ] \
     || erreur "session Wayland non supportée par xsecurelock. Choisir une session X11."
 [ -n "${DISPLAY:-}" ] \
